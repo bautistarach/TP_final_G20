@@ -21,14 +21,15 @@ private:
 	bool estado;
 	bool vivo;
 	int vida;
+	cFormaAtaque* ataq;
 	int id_dragon;
 
 
 public:
 	cDragones(string nom, string car, string tam, string col, bool est, bool viv);
 	~cDragones();
-	void alta_nombre();
-	void entrenar();
+	void alta_nombre();// falta
+	//void entrenar(); hecha en jinetes
 	//bool domado(); tiene que estar en jinete
 	//void baja();
 	bool get_estado();
@@ -40,9 +41,10 @@ public:
 	int get_id();
 	int get_vida();
 	void set_vida(int vid);
+	void set_nombre(string nomb);
 	static int cont_id;
 	//string operator=(string nom);
 	//void operator-(string aux);
-
+	void set_ataque(cFormaAtaque* atak);
 };
 #endif

@@ -34,6 +34,7 @@ public:
 	void baja_dragon(cDragones* dragoncito);
 	tipoResultado get_resultado();
 	void set_resultado(tipoResultado NuevoEstado);
+	void entrenar_dragon(cDragones* dragon);
 
 
 };

@@ -96,3 +96,39 @@ void cJinetes::set_resultado(tipoResultado NuevoEstado)
 {
 	this->resultado = NuevoEstado;
 }
+
+void cJinetes::entrenar_dragon(cDragones* dragon)
+{
+	if (dragon->get_estado() == true) {
+		srand(time(NULL));
+		int resul = rand() % 5 + 5;
+
+		if (this->caracteristica == bajo || this->caracteristica == flaco) {
+
+			if (resul > 3) {
+				dragon->set_vida(dragon->get_vida() + 5);
+
+			}
+			else {
+				cout << "El entrenamiento no fue exitoso" << endl;
+			}
+		}
+		else if (this->caracteristica == alto || this->caracteristica == robusto) {
+			if (resul > 2) {
+				dragon->set_vida(dragon->get_vida() + 5);
+
+			}
+			else
+				cout << "El entrenamiento no fue exitoso" << endl;
+		}
+		else if (this->caracteristica == musculoso || this->caracteristica == agil) {
+			dragon->set_vida(dragon->get_vida() + 5);
+
+
+		}
+
+
+	}
+	else if (dragon->get_estado() == false)
+		return;
+}

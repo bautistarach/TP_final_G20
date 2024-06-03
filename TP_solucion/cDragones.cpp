@@ -18,11 +18,24 @@ cDragones::~cDragones()
 
 void cDragones::alta_nombre()
 {
+	if (this->ataq->get_ataque() == fuego)
+		set_nombre("fireball");
+	else if (this->ataq->get_ataque() == viento)
+		set_nombre("windy");
+	else if (this->ataq->get_ataque() == rayo)
+		set_nombre("Thunder");
+	else if (this->ataq->get_ataque() == garras)
+		set_nombre("Garritas");
+	else if (this->ataq->get_ataque() == acido)
+		set_nombre("acidus");
+	//else
+		//throw new exception("N");
 }
 
-void cDragones::entrenar()
-{
-}
+//void cDragones::entrenar()
+//{
+//
+//}
 
 bool cDragones::get_estado()
 {
@@ -62,4 +75,14 @@ int cDragones::get_vida()
 void cDragones::set_vida(int vid)
 {
 	this->vida = vid;
+}
+
+void cDragones::set_nombre(string nomb)
+{
+	this->nombre = nomb;
+}
+
+void cDragones::set_ataque(cFormaAtaque* atak)
+{
+	this->ataq = atak;
 }

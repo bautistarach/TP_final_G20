@@ -1,4 +1,2 @@
-﻿  cJinetes.cpp
-C:\Users\rachb\LP_TP\TP_solucion\cJinetes.cpp(44,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\rachb\LP_TP\TP_solucion\cJinetes.cpp(72): warning C4715: 'cJinetes::domar_dragon': no todas las rutas de acceso de control devuelven un valor
+﻿  LINK : no se encontró C:\Users\rachb\LP_TP\TP_solucion\x64\Debug\TP_solucion.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   TP_solucion.vcxproj -> C:\Users\rachb\LP_TP\TP_solucion\x64\Debug\TP_solucion.exe
