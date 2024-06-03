@@ -1,0 +1,48 @@
+#pragma once
+#ifndef _CDRAGONES_H
+#define _CDRAGONES_H
+
+#include <string>
+#include <iostream>
+#include <sstream>
+
+#include "cFormaAtaque.h"
+//#include "cVikingos.h"
+
+using namespace std;
+
+class cDragones
+{
+private:
+	string nombre;
+	string caracteristica;
+	string tamanio;
+	string color;
+	bool estado;
+	bool vivo;
+	int vida;
+	int id_dragon;
+
+
+public:
+	cDragones(string nom, string car, string tam, string col, bool est, bool viv);
+	~cDragones();
+	void alta_nombre();
+	void entrenar();
+	//bool domado(); tiene que estar en jinete
+	//void baja();
+	bool get_estado();
+	void set_estado(bool NuevoEstado);
+	//void ataque(cVikingos*vikingo);
+	void set_vivo(bool viv);
+	bool get_vivo();
+	string get_nombre();
+	int get_id();
+	int get_vida();
+	void set_vida(int vid);
+	static int cont_id;
+	//string operator=(string nom);
+	//void operator-(string aux);
+
+};
+#endif

@@ -139,7 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cAldea.cpp" />
+    <ClCompile Include="cDragones.cpp" />
+    <ClCompile Include="cFormaAtaque.cpp" />
+    <ClCompile Include="cJinetes.cpp" />
+    <ClCompile Include="cPersona.cpp" />
+    <ClCompile Include="cVikingos.cpp" />
     <ClCompile Include="TP_solucion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cAldea.h" />
+    <ClInclude Include="cDragones.h" />
+    <ClInclude Include="cFormaAtaque.h" />
+    <ClInclude Include="cJinetes.h" />
+    <ClInclude Include="cPersona.h" />
+    <ClInclude Include="cVikingos.h" />
+    <ClInclude Include="tipoAtaque.h" />
+    <ClInclude Include="tipoCaracteristicas.h" />
+    <ClInclude Include="tipoResultado.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
