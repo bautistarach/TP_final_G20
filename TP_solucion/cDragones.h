@@ -28,7 +28,7 @@ private:
 public:
 	cDragones(string nom, string car, string tam, string col, bool est, bool viv);
 	~cDragones();
-	void alta_nombre();// falta
+	void alta_nombre();
 	//void entrenar(); hecha en jinetes
 	//bool domado(); tiene que estar en jinete
 	//void baja();

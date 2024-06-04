@@ -33,8 +33,6 @@ void cPersona::set_apellido(string NuevoEstado)
 	this->apellido = NuevoEstado;
 }
 
-void cPersona::trabajar()
-{
-}
+
 
 

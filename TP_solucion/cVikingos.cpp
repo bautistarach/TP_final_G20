@@ -1,6 +1,6 @@
 #include "cVikingos.h"
 
-cVikingos::cVikingos(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_, string pos):cPersona(nom,ape,apo,fecha_nac)
+cVikingos::cVikingos(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_, posicion_vik pos):cPersona(nom,ape,apo,fecha_nac)
 {
 	this->dragones_eliminados = dragones_elim;
 	this->vivo = vivo_;
@@ -48,4 +48,14 @@ void cVikingos::ataque_vikingo(cDragones* dragon)
 		this->dragones_eliminados++;
 		dragon->set_vivo(false);
 	}
+}
+
+void cVikingos::set_trabajo(posicion_vik pos)
+{
+	this->posicion = pos;
+}
+
+posicion_vik cVikingos::trabajar()
+{
+	return this->posicion;
 }

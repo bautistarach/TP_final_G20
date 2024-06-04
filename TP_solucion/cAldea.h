@@ -23,7 +23,7 @@ private:
 public:
 	cAldea();
 	~cAldea();
-
+	void revision_dragones(list<cDragones*>listadrag);//funcion para eliminar los dragones muertos de la lista de dragones
 
 };
 #endif
