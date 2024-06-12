@@ -7,8 +7,8 @@
 #include <sstream>
 #include <list>
 
-#include "cJinetes.h"
-#include "cVikingos.h"
+#include "cPersona.h"
+
 
 using namespace std;
 
@@ -23,7 +23,7 @@ private:
 public:
 	cAldea();
 	~cAldea();
-	void revision_dragones(list<cDragones*>listadrag);//funcion para eliminar los dragones muertos de la lista de dragones
+	void revision_dragones(cDragones* dragoncito);//funcion para eliminar los dragones muertos de la lista de dragones
 
 };
 #endif

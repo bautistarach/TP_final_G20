@@ -14,11 +14,11 @@ cJinetes::~cJinetes()
 void cJinetes::operator-(cDragones* dragoncito)
 {
 	list<cDragones*>::iterator itdrag;
-	list<cDragones*> dragones;
 
-	for (itdrag = dragones.begin(); itdrag != dragones.end(); itdrag++) {
+
+	for (itdrag = Dragon.begin(); itdrag != Dragon.end(); itdrag++) {
 		if ((*itdrag)->get_id() == dragoncito->get_id()) {
-			dragones.remove(dragoncito);
+			Dragon.remove(dragoncito);
 		}
 	}
 	return;
@@ -31,7 +31,8 @@ void cJinetes::operator+(cDragones* dragoncito)
 
 	for (itdrag = Dragon.begin(); itdrag != Dragon.end(); itdrag++) {
 		if (dragoncito->get_id() == (*itdrag)->get_id()) {
-			//agregar una exception
+			
+			throw new exception("Este dragon ya existe");//try-catch en el main 
 		}
 		else {
 			Dragon.push_back(dragoncito);
