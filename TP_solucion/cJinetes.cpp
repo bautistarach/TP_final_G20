@@ -27,7 +27,6 @@ void cJinetes::operator-(cDragones* dragoncito)
 void cJinetes::operator+(cDragones* dragoncito)
 {
 	list<cDragones*>::iterator itdrag;
-	//list<cDragones*> dragones;
 
 	for (itdrag = Dragon.begin(); itdrag != Dragon.end(); itdrag++) {
 		if (dragoncito->get_id() == (*itdrag)->get_id()) {
@@ -43,7 +42,7 @@ void cJinetes::operator+(cDragones* dragoncito)
 bool cJinetes::domar_dragon(cDragones* dragon)
 {
 	srand(time(NULL));
-	int resul = rand() % 5 + 5;
+	int resul = rand() % 5;
 	if (this->resultado == 0 || this->resultado == 2) {
 		return false;
 	}
@@ -98,18 +97,22 @@ void cJinetes::set_resultado(tipoResultado NuevoEstado)
 	this->resultado = NuevoEstado;
 }
 
+list<cDragones*> cJinetes::get_dragones()
+{
+	return this->Dragon;
+}
+
 void cJinetes::entrenar_dragon(cDragones* dragon)
 {
 	if (dragon->get_estado() == true) {
 		srand(time(NULL));
-		int resul = rand() % 5 + 5;
+		int resul = rand() % 5;
 
 		if (this->caracteristica == bajo || this->caracteristica == flaco) {
 
 			if (resul > 3) {
 				dragon->set_vida(dragon->get_vida() + 5);
-
-			}
+				//Dragon->			}
 			else {
 				cout << "El entrenamiento no fue exitoso" << endl;
 			}
@@ -133,3 +136,6 @@ void cJinetes::entrenar_dragon(cDragones* dragon)
 	else if (dragon->get_estado() == false)
 		return;
 }
+
+
+

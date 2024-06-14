@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class cJinetes:public cPersona
+class cJinetes :public cPersona
 {
 private:
 
@@ -24,7 +24,7 @@ private:
 
 
 public:
-	cJinetes(string nom, string ape, string apo, string fecha_nac_, tipoResultado resul, tipoCaracteristicas carac,list<cDragones*> drag);
+	cJinetes(string nom, string ape, string apo, string fecha_nac_, tipoResultado resul, tipoCaracteristicas carac, list<cDragones*> drag);
 	~cJinetes();
 	//int operator=(string aux);
 	void operator-(cDragones* dragoncito);
@@ -35,6 +35,8 @@ public:
 	tipoResultado get_resultado();
 	void set_resultado(tipoResultado NuevoEstado);
 	void entrenar_dragon(cDragones* dragon);
+	list<cDragones*>get_dragones();
+
 
 
 };

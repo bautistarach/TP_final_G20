@@ -8,6 +8,9 @@
 #include <list>
 
 #include "cPersona.h"
+#include "cVikingos.h"
+#include "cJinetes.h"
+
 
 
 using namespace std;
@@ -16,6 +19,9 @@ class cAldea {
 
 private:
 	list <cDragones*> Dragones;
+	list <cDragones*> eliminados;
+	list<cDragones*>domados;
+	list <cDragones*>salvajes;
 	list <cVikingos*> Vikingos;
 	list <cJinetes*> Jinetes;
 
@@ -24,7 +30,9 @@ public:
 	cAldea();
 	~cAldea();
 	void revision_dragones(cDragones* dragoncito);//funcion para eliminar los dragones muertos de la lista de dragones
-
+	void dragones_muertos(cDragones* elim);
+	void clasificar_dragones();
+	cJinetes* asignar_jinete(cDragones* d);
 };
 #endif
 

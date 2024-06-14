@@ -32,10 +32,6 @@ void cDragones::alta_nombre()
 		//throw new exception("N");
 }
 
-//void cDragones::entrenar()
-//{
-//
-//}
 
 bool cDragones::get_estado()
 {

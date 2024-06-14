@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <list>
 
 #include "cFormaAtaque.h"
 //#include "cVikingos.h"
@@ -18,10 +19,10 @@ private:
 	string caracteristica;
 	string tamanio;
 	string color;
-	bool estado;
+	bool estado; //si esta domado o no el dragon 
 	bool vivo;
 	int vida;
-	cFormaAtaque* ataq;
+	list <cFormaAtaque*> ataq;
 	int id_dragon;
 
 
@@ -45,6 +46,7 @@ public:
 	static int cont_id;
 	//string operator=(string nom);
 	//void operator-(string aux);
-	void set_ataque(cFormaAtaque* atak);
+	void set_ataque(list <cFormaAtaque*> atak);
+	//void asignar_jinete(cJinetes*j);
 };
 #endif

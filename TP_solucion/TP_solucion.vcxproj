@@ -140,21 +140,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cAldea.cpp" />
+    <ClCompile Include="cCarpintero.cpp" />
     <ClCompile Include="cDragones.cpp" />
+    <ClCompile Include="cFontanero.cpp" />
     <ClCompile Include="cFormaAtaque.cpp" />
+    <ClCompile Include="cHerrero.cpp" />
     <ClCompile Include="cJinetes.cpp" />
+    <ClCompile Include="cMedico.cpp" />
     <ClCompile Include="cPersona.cpp" />
+    <ClCompile Include="cProfesor.cpp" />
     <ClCompile Include="cVikingos.cpp" />
     <ClCompile Include="TP_solucion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cAldea.h" />
+    <ClInclude Include="cCarpintero.h" />
     <ClInclude Include="cDragones.h" />
+    <ClInclude Include="cFontanero.h" />
     <ClInclude Include="cFormaAtaque.h" />
+    <ClInclude Include="cHerrero.h" />
     <ClInclude Include="cJinetes.h" />
+    <ClInclude Include="cMedico.h" />
     <ClInclude Include="cPersona.h" />
+    <ClInclude Include="cProfesor.h" />
     <ClInclude Include="cVikingos.h" />
-    <ClInclude Include="posicionvikingo.h" />
     <ClInclude Include="tipoAtaque.h" />
     <ClInclude Include="tipoCaracteristicas.h" />
     <ClInclude Include="tipoResultado.h" />
