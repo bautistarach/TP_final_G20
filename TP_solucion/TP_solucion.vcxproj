@@ -164,6 +164,7 @@
     <ClInclude Include="cPersona.h" />
     <ClInclude Include="cProfesor.h" />
     <ClInclude Include="cVikingos.h" />
+    <ClInclude Include="tipoDefensa.h" />
     <ClInclude Include="tipoAtaque.h" />
     <ClInclude Include="tipoCaracteristicas.h" />
     <ClInclude Include="tipoResultado.h" />
