@@ -6,7 +6,7 @@ class cHerrero:public cVikingos
 {
 
 public:
-	cHerrero(unsigned int dragones_elim, bool vivo_);
+	cHerrero(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_);
 	~cHerrero();
 
 	void trabajar(cVikingos* v);

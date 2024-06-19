@@ -2,10 +2,63 @@
 //
 
 #include <iostream>
+#include <list>
+
+using namespace std;
+
+#include "cAldea.h"
+#include "cVikingos.h"
+#include "cJinetes.h"
+#include "cDragones.h"
+#include "cPersona.h"
+#include "cGuerrero.h"
+#include "cMedico.h"
+#include "cHerrero.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cVikingos* Andres = new cGuerrero("Andres", "Gonzalez", "Keko", "14/02/1992", 10, true);
+    cVikingos* Martin = new cGuerrero("Martin", "Lopez", "Tincho", "21/11/1995", 15, false);
+    cVikingos* Felipe = new cMedico("Felipe", "Germano", "Pipe", "02/06/2000", 5, true);
+    cVikingos* Bautista = new cMedico("Bautista", "Rach", "Toba", "20/07/2003", 7, false);
+    cVikingos* Martina = new cHerrero("Martina", "Hansel", "Tula", "29/03/2003", 4, true);
+    cVikingos* Julia = new cHerrero("Julia", "Gretel", "Juji", "25/12/1994", 11, false);
+    
+
+    list <cVikingos*> VikingosAldea;
+
+    VikingosAldea.push_back(Andres);
+    VikingosAldea.push_back(Martin);
+    VikingosAldea.push_back(Felipe);
+    VikingosAldea.push_back(Bautista);
+    VikingosAldea.push_back(Martina);
+    VikingosAldea.push_back(Julia);
+
+
+
+    cDragones* Panchito = new cDragones("Panchito", "rabioso", "grande", "verde", true, false);
+    cDragones* Fueguito = new cDragones("Fueguito", "enojo", "mediano", "rojo", false, true);
+    cDragones* Chispita = new cDragones("Chispita", "rapido", "mediano", "naranja", false, true);
+    cDragones* Cutie = new cDragones("Cutie", "tierno", "chiquitito", "arcoiris", true, true);
+
+    list<cDragones*> DragonesAldea;
+
+    DragonesAldea.push_back(Panchito);
+    DragonesAldea.push_back(Fueguito);
+    DragonesAldea.push_back(Chispita);
+    DragonesAldea.push_back(Cutie);
+   
+
+  //  cJinetes* Miguel = new cJinetes();
+  //  cJinetes* Lorenzo = new cJinetes();
+  //  cJinetes* Carlos = new cJinetes();
+  //  cJinetes* Sebastian = new cJinetes();
+  //  cJinetes* Jorge = new cJinetes();
+
+
+
+    cout << "Hello World!\n";
+    return 0;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
