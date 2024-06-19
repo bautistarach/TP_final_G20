@@ -5,12 +5,10 @@ cVikingos::cVikingos(string nom, string ape, string apo, string fecha_nac, unsig
 	this->dragones_eliminados = dragones_elim;
 	this->vivo = vivo_;
 	this->ataque = 10;
+	this->defensa = 5;
 	this->vida = 100;
 }
 
-cVikingos::~cVikingos()
-{
-}
 
 bool cVikingos::dragones_terminados()
 {
@@ -39,13 +37,30 @@ bool cVikingos::morir_batallando()
 		return false;
 }
 
-void cVikingos::ataque_vikingo(cDragones* dragon)
+void cVikingos::atacar(cDragones* dragon)
 {
-	dragon->set_vida(dragon->get_vida() - (this->ataque));// le resto la cantidad de vida que hace el vikingo al atacar 
+	int i = dragon->get_ataque().size();
+	srand(time(NULL));
+	int resul = rand() % i;
 
-	if (dragon->get_vida() <= 0) {
-		this->dragones_eliminados++;
-		dragon->set_vivo(false);
-	}
+	dragon->set_vida(dragon->get_vida() - ((this->ataque) - dragon->devolver_defensa(resul)));//ataque de vikingo a dragon
+	if (dragon->get_vida() <= 0)
+		baja_confirmada(dragon);
+
+	this->vida = (this->vida) - (dragon->devolver_ataque(resul) - this->defensa);//ataque de dragon a vikingo
+	if (this->vida <= 0)
+		morir_batallando();
+
+	
+}
+
+void cVikingos::set_vida(int v)
+{
+	this->vida = v;
+}
+
+int cVikingos::get_vida()
+{
+	return this->vida;
 }
 

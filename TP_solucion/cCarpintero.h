@@ -4,6 +4,8 @@
 class cCarpintero: public cVikingos
 {
 public:
-	void trabajar();
+	cCarpintero(unsigned int dragones_elim, bool vivo_);
+	~cCarpintero();
+	void trabajar(cVikingos* v);
 };
 

@@ -29,7 +29,7 @@ private:
 public:
 	cDragones(string nom, string car, string tam, string col, bool est, bool viv);
 	~cDragones();
-	void alta_nombre();
+	void alta_nombre(string nom);
 	//void entrenar(); hecha en jinetes
 	//bool domado(); tiene que estar en jinete
 	//void baja();
@@ -48,5 +48,10 @@ public:
 	//void operator-(string aux);
 	void set_ataque(list <cFormaAtaque*> atak);
 	//void asignar_jinete(cJinetes*j);
+	//void atacar(cVikingos* vik);
+	list <cFormaAtaque*> get_ataque();
+	int devolver_ataque(int x);
+	int devolver_defensa(int x);
+	void agregar_ataque(cFormaAtaque* at);
 };
 #endif

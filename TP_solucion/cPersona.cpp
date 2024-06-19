@@ -33,19 +33,6 @@ void cPersona::set_apellido(string NuevoEstado)
 	this->apellido = NuevoEstado;
 }
 
-void cPersona::interactuar(cPersona* p)
-{
-	cVikingos* v = dynamic_cast<cVikingos*>(p);
-
-	if (v != NULL)
-	{
-		//AGREGAR PERSONA A LA LISTA DE VIKINGOS
-	}
-	else
-	{
-		//AGREGAR PERSONA A LA LISTA DE JINETES
-	}
-}
 
 
 

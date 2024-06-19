@@ -9,23 +9,23 @@ cFormaAtaque::~cFormaAtaque()
 {
 }
 
-tipoAtaque cFormaAtaque::get_ataque()
+int cFormaAtaque::get_atak()
 {
-	return this->ataque;
+	return static_cast<int>(this->ataque);
 
 }
 
-void cFormaAtaque::set_ataque(tipoAtaque NuevoEstado)
+void cFormaAtaque::set_atak(tipoAtaque NuevoEstado)
 {
 	this->ataque = NuevoEstado;
 }
 
-tipoDefensa cFormaAtaque::get_defensa()
+int cFormaAtaque::get_def()
 {
-	return this->defensa;
+	return static_cast<int>(this->defensa);
 }
 
-void cFormaAtaque::set_defensa(tipoDefensa NuevoEstado)
+void cFormaAtaque::set_def(tipoDefensa NuevoEstado)
 {
 	this->defensa = NuevoEstado;
 }

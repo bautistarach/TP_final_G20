@@ -102,39 +102,44 @@ list<cDragones*> cJinetes::get_dragones()
 	return this->Dragon;
 }
 
-void cJinetes::entrenar_dragon(cDragones* dragon)
+void cJinetes::entrenar_dragon(cDragones* dragon, cFormaAtaque*a)
 {
 	if (dragon->get_estado() == true) {
-		srand(time(NULL));
-		int resul = rand() % 5;
-
-		if (this->caracteristica == bajo || this->caracteristica == flaco) {
-
-			if (resul > 3) {
-				dragon->set_vida(dragon->get_vida() + 5);
-				//Dragon->			}
-			else {
-				cout << "El entrenamiento no fue exitoso" << endl;
-			}
-		}
-		else if (this->caracteristica == alto || this->caracteristica == robusto) {
-			if (resul > 2) {
-				dragon->set_vida(dragon->get_vida() + 5);
-
-			}
-			else
-				cout << "El entrenamiento no fue exitoso" << endl;
-		}
-		else if (this->caracteristica == musculoso || this->caracteristica == agil) {
-			dragon->set_vida(dragon->get_vida() + 5);
-
-
-		}
-
-
+		dragon->set_vida(dragon->get_vida() + 5);
+		dragon->agregar_ataque(a);
 	}
-	else if (dragon->get_estado() == false)
-		return;
+
+	//if (dragon->get_estado() == true) {
+	//	srand(time(NULL));
+	//	int resul = rand() % 5;
+
+	//	if (this->caracteristica == bajo || this->caracteristica == flaco) {
+
+	//		if (resul > 3) {
+	//			dragon->set_vida(dragon->get_vida() + 5);
+	//			//Dragon->			}
+	//		else {
+	//			cout << "El entrenamiento no fue exitoso" << endl;
+	//		}
+	//	}
+	//	else if (this->caracteristica == alto || this->caracteristica == robusto) {
+	//		if (resul > 2) {
+	//			dragon->set_vida(dragon->get_vida() + 5);
+
+	//		}
+	//		else
+	//			cout << "El entrenamiento no fue exitoso" << endl;
+	//	}
+	//	else if (this->caracteristica == musculoso || this->caracteristica == agil) {
+	//		dragon->set_vida(dragon->get_vida() + 5);
+
+
+	//	}
+
+
+	//}
+	//else if (dragon->get_estado() == false)
+	//	return;
 }
 
 

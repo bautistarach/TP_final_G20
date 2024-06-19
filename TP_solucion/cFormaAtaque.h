@@ -15,17 +15,18 @@ class cFormaAtaque
 {
 private:
 
-	tipoAtaque ataque;
-	tipoDefensa defensa;
+	
 
 public:
 
+tipoAtaque ataque;
+	tipoDefensa defensa;
 	cFormaAtaque(tipoAtaque ataque_, tipoDefensa defensa_);
 	~cFormaAtaque();
-	tipoAtaque get_ataque();
-	void set_ataque(tipoAtaque NuevoEstado);
-	tipoDefensa get_defensa();
-	void set_defensa(tipoDefensa NuevoEstado);
+	int get_atak();
+	void set_atak(tipoAtaque NuevoEstado);
+	int get_def();
+	void set_def(tipoDefensa NuevoEstado);
 
 
 

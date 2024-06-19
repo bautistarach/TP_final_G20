@@ -6,6 +6,8 @@ class cMedico:public cVikingos
 {
 
 public:
-	void trabajar();
+	cMedico(unsigned int dragones_elim, bool vivo_);
+	~cMedico();
+	void trabajar(cVikingos*v);
 };
 

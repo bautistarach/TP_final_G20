@@ -9,6 +9,7 @@ cDragones::cDragones(string nom, string car, string tam, string col, bool est, b
 	this->estado=est;
 	this->vivo = viv;
 	this->vida = 100;
+	//this->ataq = a;
 	this->id_dragon = cont_id++;
 }
 
@@ -16,20 +17,9 @@ cDragones::~cDragones()
 {
 }
 
-void cDragones::alta_nombre()
+void cDragones::alta_nombre(string nom)
 {
-	if (this->ataq->get_ataque() == fuego)
-		set_nombre("fireball");
-	else if (this->ataq->get_ataque() == viento)
-		set_nombre("windy");
-	else if (this->ataq->get_ataque() == rayo)
-		set_nombre("Thunder");
-	else if (this->ataq->get_ataque() == garras)
-		set_nombre("Garritas");
-	else if (this->ataq->get_ataque() == acido)
-		set_nombre("acidus");
-	//else
-		//throw new exception("N");
+	this->nombre = nom;
 }
 
 
@@ -78,7 +68,59 @@ void cDragones::set_nombre(string nomb)
 	this->nombre = nomb;
 }
 
-void cDragones::set_ataque(cFormaAtaque* atak)
+
+
+void cDragones::set_ataque(list<cFormaAtaque*> atak)
 {
 	this->ataq = atak;
 }
+
+list<cFormaAtaque*> cDragones::get_ataque()
+{
+	
+	return this->ataq;
+}
+
+int cDragones::devolver_ataque(int x)
+{
+	list<cFormaAtaque*>::iterator it;
+	int f = 0;
+	for (it = ataq.begin(); it != ataq.end(); it++) {
+		
+		if (f == x) {
+			return (*it)->get_atak();
+		}
+		f++;
+	}
+	
+}
+int cDragones::devolver_defensa(int x)
+{
+	list<cFormaAtaque*>::iterator it;
+	int f = 0;
+	for (it = ataq.begin(); it != ataq.end(); it++) {
+
+		if (f == x) {
+			return (*it)->get_def();
+		}
+		f++;
+	}
+
+}
+
+void cDragones::agregar_ataque(cFormaAtaque* at)
+{
+	list<cFormaAtaque*>::iterator it;
+
+	for (it = ataq.begin(); it != ataq.end(); it++)
+	{
+		if ((*it) == at)
+		{
+			throw new exception("el ataque y la defensa ya estan dentro de la lista");
+			return;
+		}
+
+	}
+	ataq.push_back(at);
+}
+

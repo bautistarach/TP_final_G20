@@ -6,6 +6,8 @@ class cFontanero:public cVikingos
 {
 
 public:
-	void trabajar();
+	cFontanero(unsigned int dragones_elim, bool vivo_);
+	~cFontanero();
+	void trabajar(cVikingos* v);
 };
 
