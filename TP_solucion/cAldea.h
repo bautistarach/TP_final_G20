@@ -33,6 +33,8 @@ public:
 	void dragones_muertos(cDragones* elim);
 	void clasificar_dragones();
 	cJinetes* asignar_jinete(cDragones* d);
+	string to_string();
+	void imprimir();
 };
 #endif
 

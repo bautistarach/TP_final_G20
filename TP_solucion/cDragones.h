@@ -53,5 +53,7 @@ public:
 	int devolver_ataque(int x);
 	int devolver_defensa(int x);
 	void agregar_ataque(cFormaAtaque* at);
+	string to_string();
+	void imprimir();
 };
 #endif

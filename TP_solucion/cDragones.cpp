@@ -124,3 +124,17 @@ void cDragones::agregar_ataque(cFormaAtaque* at)
 	ataq.push_back(at);
 }
 
+string cDragones::to_string()
+{
+	string resul = this->nombre + " " + this->caracteristica + " " + this->tamanio + " " + this->color + " " + to_string(this->estado)+" "+to_string(this->vivo)+" "+to_string(this->vida)+" "+to_string(id_dragon);
+
+	//falta hacer un for para sumar la lista de habilidades al resul
+
+	return resul;
+}
+
+void cDragones::imprimir()
+{
+	cout <<this-> to_string();
+}
+

@@ -82,3 +82,8 @@ cJinetes* cAldea::asignar_jinete(cDragones* d)//nos devuelve que jinete esta asi
 		}
 	}
 }
+
+string cAldea::to_string()
+{
+	
+}
