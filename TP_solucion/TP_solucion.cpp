@@ -35,25 +35,30 @@ int main()
     VikingosAldea.push_back(Julia);
 
 
-
     cDragones* Panchito = new cDragones("Panchito", "rabioso", "grande", "verde", true, false);
     cDragones* Fueguito = new cDragones("Fueguito", "enojo", "mediano", "rojo", false, true);
     cDragones* Chispita = new cDragones("Chispita", "rapido", "mediano", "naranja", false, true);
     cDragones* Cutie = new cDragones("Cutie", "tierno", "chiquitito", "arcoiris", true, true);
 
-    list<cDragones*> DragonesAldea;
+    list<cDragones*> DragonesMigue;
 
-    DragonesAldea.push_back(Panchito);
-    DragonesAldea.push_back(Fueguito);
-    DragonesAldea.push_back(Chispita);
-    DragonesAldea.push_back(Cutie);
+    DragonesMigue.push_back(Panchito);
+    DragonesMigue.push_back(Fueguito);
+
+    list<cDragones*> DragonesLoren;
+    DragonesLoren.push_back(Chispita);
+    DragonesLoren.push_back(Cutie);
    
 
-  //  cJinetes* Miguel = new cJinetes();
-  //  cJinetes* Lorenzo = new cJinetes();
+   cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
+   cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
   //  cJinetes* Carlos = new cJinetes();
   //  cJinetes* Sebastian = new cJinetes();
-  //  cJinetes* Jorge = new cJinetes();
+
+   list<cJinetes*> JinetesAldea;
+   JinetesAldea.push_back(Miguel);
+   JinetesAldea.push_back(Lorenzo);
+
 
 
 
