@@ -10,4 +10,5 @@ cHerrero::~cHerrero()
 
 void cHerrero::trabajar(cVikingos* v)
 {
+	v->set_nataque(v->get_nataque() + 1);//mejora el arma del vikingo en 1 
 }

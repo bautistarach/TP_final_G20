@@ -64,3 +64,13 @@ int cVikingos::get_vida()
 	return this->vida;
 }
 
+int cVikingos::get_nataque()
+{
+	return this->ataque;
+}
+
+void cVikingos::set_nataque(int a)
+{
+	this->ataque = a;
+}
+

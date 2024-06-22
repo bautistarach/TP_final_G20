@@ -34,6 +34,8 @@ public:
 	void set_vida(int v);
 	int get_vida();
 	virtual void trabajar(cVikingos* v)=0;//clase abstracta
+	int get_nataque();
+	void set_nataque(int a);
 	//friend void cDragones:: ataque();
 	// void set_trabajo(posicion_vik pos);
 	//posicion_vik trabajar();//devuelve la posición en donde trabaja el vikingo, debo hacer algo mas??

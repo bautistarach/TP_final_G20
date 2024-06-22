@@ -11,4 +11,5 @@ cGuerrero::~cGuerrero()
 
 void cGuerrero::trabajar(cVikingos* v)
 {
+	cout << "Vikingo se dirige a pelear" << endl;
 }
