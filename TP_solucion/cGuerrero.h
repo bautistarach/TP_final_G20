@@ -1,11 +1,11 @@
 #pragma once
 
 #include "cVikingos.h"
-class cCarpintero: public cVikingos
+class cGuerrero: public cVikingos
 {
 public:
-	cCarpintero(unsigned int dragones_elim, bool vivo_);
-	~cCarpintero();
+	cGuerrero(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_);
+	~cGuerrero();
 	void trabajar(cVikingos* v);
 };
 

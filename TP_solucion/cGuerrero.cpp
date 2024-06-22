@@ -1,14 +1,14 @@
-#include "cCarpintero.h"
+#include "cGuerrero.h"
 
-cCarpintero::cCarpintero(unsigned int dragones_elim, bool vivo_):cVikingos(dragones_elim, vivo_)
+cGuerrero::cGuerrero(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_):cVikingos(nom, ape, apo, fecha_nac, dragones_elim, vivo_)
 {
 
 }
 
-cCarpintero::~cCarpintero()
+cGuerrero::~cGuerrero()
 {
 }
 
-void cCarpintero::trabajar(cVikingos* v)
+void cGuerrero::trabajar(cVikingos* v)
 {
 }
