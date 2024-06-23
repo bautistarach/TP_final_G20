@@ -23,6 +23,9 @@ public:
 	void set_nombre(string NuevoEstado);
 	string get_apellido();
 	void set_apellido(string NuevoEstado);
+	string to_string();
+	void imprimir();
+
 	
 
 };

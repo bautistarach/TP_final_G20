@@ -33,6 +33,19 @@ void cPersona::set_apellido(string NuevoEstado)
 	this->apellido = NuevoEstado;
 }
 
+string cPersona::to_string()
+{
+	string resul = this->nombre + " " + this->apellido + " " + this->apodo + " "+this->fecha_nac;
+
+	return resul;
+}
+
+void cPersona::imprimir()
+{
+	
+	cout<< to_string()<<endl;
+}
+
 
 
 
