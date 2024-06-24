@@ -156,6 +156,36 @@ list<cDragones*>::iterator it3;
    }
     DragonesMigue.clear();
 
+    list<cDragones*>::iterator it4;
+    for (it4 = DragonesTotales.begin(); it4 != DragonesTotales.end(); it4++) {
+        delete(*it4);
+    }
+    DragonesTotales.clear();
+
+    list<cDragones*>::iterator it5;
+
+    for (it5 = DragonesDomados.begin(); it5 != DragonesDomados.end(); it5++) {
+        delete(*it5);
+    }
+    DragonesDomados.clear();
+
+    list<cDragones*>::iterator it6;
+
+    for (it6 = DragonesEliminados.begin(); it6 != DragonesEliminados.end(); it6++) {
+        delete(*it6);
+
+    }
+    DragonesEliminados.clear();
+
+    list<cDragones*>::iterator it7;
+
+    for (it7 = DragonesSalvajes.begin(); it7 != DragonesSalvajes.end(); it7++) {
+        delete(*it7);
+
+    }
+    DragonesSalvajes.clear();
+
+
     delete forma1;
     delete forma2;
     delete forma3;
