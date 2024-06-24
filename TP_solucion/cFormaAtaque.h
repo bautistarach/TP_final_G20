@@ -27,7 +27,7 @@ tipoAtaque ataque;
 	void set_atak(tipoAtaque NuevoEstado);
 	int get_def();
 	void set_def(tipoDefensa NuevoEstado);
-
+	friend ostream& operator<<(ostream& out, cFormaAtaque& f)
 
 
 };

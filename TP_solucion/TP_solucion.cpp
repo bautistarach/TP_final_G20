@@ -11,9 +11,12 @@ using namespace std;
 #include "cJinetes.h"
 #include "cDragones.h"
 #include "cPersona.h"
+#include "cFormaAtaque.h"
 #include "cGuerrero.h"
 #include "cMedico.h"
 #include "cHerrero.h"
+#include "tipoAtaque.h"
+#include "tipoDefensa.h"
 
 int main()
 {
@@ -35,29 +38,51 @@ int main()
     VikingosAldea.push_back(Julia);
 
 
-    cDragones* Panchito = new cDragones("Panchito", "rabioso", "grande", "verde", true, false);
+    cDragones* Panchito = new cDragones("Panchito", "rabioso", "grande", "verde", true, true);
     cDragones* Fueguito = new cDragones("Fueguito", "enojo", "mediano", "rojo", false, true);
     cDragones* Chispita = new cDragones("Chispita", "rapido", "mediano", "naranja", false, true);
-    cDragones* Cutie = new cDragones("Cutie", "tierno", "chiquitito", "arcoiris", true, true);
+    cDragones* Cutie = new cDragones("Cutie", "tierno", "chiquito", "arcoiris", true, true);
+    cDragones* Rayito = new cDragones("Rayito", "veloz", "chiquito", "amarillo", true, true);
+    cDragones* Destructorcito = new cDragones("Destructorcito", "fuerte", "grande", "negro", true, false);
+    cDragones* Nerdy = new cDragones("Nerdy", "inteligente", "mediano", "violeta", true, true);
 
     list<cDragones*> DragonesMigue;
 
     DragonesMigue.push_back(Panchito);
-    DragonesMigue.push_back(Fueguito);
+    DragonesMigue.push_back(Rayito);
 
     list<cDragones*> DragonesLoren;
-    DragonesLoren.push_back(Chispita);
+    DragonesLoren.push_back(Nerdy);
     DragonesLoren.push_back(Cutie);
    
 
    cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
    cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
-  //  cJinetes* Carlos = new cJinetes();
-  //  cJinetes* Sebastian = new cJinetes();
 
    list<cJinetes*> JinetesAldea;
    JinetesAldea.push_back(Miguel);
    JinetesAldea.push_back(Lorenzo);
+
+   cFormaAtaque* forma1 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::resistencia_intensa);
+   cFormaAtaque* forma2= new cFormaAtaque(tipoAtaque::fuego, tipoDefensa::armadura_dragon);
+   cFormaAtaque* forma3 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
+   cFormaAtaque* forma4 = new cFormaAtaque(tipoAtaque::rayo, tipoDefensa::reflejos_rapidos);
+   cFormaAtaque* forma5 = new cFormaAtaque(tipoAtaque::garras, tipoDefensa::capa_invisibilidad);
+   cFormaAtaque* forma6 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::reflejos_rapidos);
+   cFormaAtaque* forma7 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
+
+
+   Miguel->domar_dragon(Fueguito);
+   Lorenzo->domar_dragon(Chispita);
+
+   try {
+       Panchito->agregar_ataque(forma1);  
+   }
+   catch (exception* e)
+   {
+       cout << e->what() << endl;
+       delete e;
+   }
 
 
 

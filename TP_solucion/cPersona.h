@@ -23,6 +23,10 @@ public:
 	void set_nombre(string NuevoEstado);
 	string get_apellido();
 	void set_apellido(string NuevoEstado);
+	string get_apodo();
+	void set_apodo(string NuevoEstado);
+	string get_fecha_nac();
+	void set_fecha_nac(string NuevoEstado);
 	string to_string();
 	void imprimir();
 

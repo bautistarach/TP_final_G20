@@ -29,3 +29,12 @@ void cFormaAtaque::set_def(tipoDefensa NuevoEstado)
 {
 	this->defensa = NuevoEstado;
 }
+
+ostream& operator<<(ostream& out, cFormaAtaque& f)
+{
+	out << "Ataque:" << f.get_atak() << endl;
+	out << "Defensa:" << f.get_def() << endl;
+
+	return out;
+
+}

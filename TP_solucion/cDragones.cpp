@@ -33,14 +33,14 @@ void cDragones::set_estado(bool NuevoEstado)
 	this->estado = NuevoEstado;
 }
 
-void cDragones::set_vivo(bool viv)
-{
-	this->vivo = viv;
-}
-
 bool cDragones::get_vivo()
 {
 	return this->vivo;
+}
+
+void cDragones::set_vivo(bool viv)
+{
+	this->vivo = viv;
 }
 
 string cDragones::get_nombre()
@@ -48,6 +48,11 @@ string cDragones::get_nombre()
 	return this->nombre;
 }
 
+void cDragones::set_nombre(string nomb)
+{
+	this->nombre = nomb;
+}
+ 
 int cDragones::get_id()
 {
 	return id_dragon;
@@ -62,13 +67,6 @@ void cDragones::set_vida(int vid)
 {
 	this->vida = vid;
 }
-
-void cDragones::set_nombre(string nomb)
-{
-	this->nombre = nomb;
-}
-
-
 
 void cDragones::set_ataque(list<cFormaAtaque*> atak)
 {
@@ -116,7 +114,7 @@ void cDragones::agregar_ataque(cFormaAtaque* at)
 	{
 		if ((*it) == at)
 		{
-			throw new exception("el ataque y la defensa ya estan dentro de la lista");
+			throw new exception("El ataque y la defensa ya estan dentro de la lista");
 			return;
 		}
 
@@ -124,17 +122,25 @@ void cDragones::agregar_ataque(cFormaAtaque* at)
 	ataq.push_back(at);
 }
 
-string cDragones::to_string()
+
+ostream& operator<<(ostream& out, cDragones& d)
 {
-	string resul = this->nombre + " " + this->caracteristica + " " + this->tamanio + " " + this->color + " " + to_string(this->estado)+" "+to_string(this->vivo)+" "+to_string(this->vida)+" "+to_string(id_dragon);
+	out << "Nombre:" << d.nombre << endl;
+	out << "Caracteristica:" << d.caracteristica << endl;
+	out << "Color:" << d.color << endl;
+	out << "Tamaño:" << d.tamanio << endl;
+	out << "Domado:" << d.estado << endl;
+	out << "Vivo:" << d.vivo << endl;
+	out << "ID:" << d.id_dragon << endl;
 
-	//falta hacer un for para sumar la lista de habilidades al resul
+	list<cFormaAtaque*>::iterator it;
 
-	return resul;
+	for (it = d.ataq.begin(); it != d.ataq.end(); it++) {
+		out << "Ataque:" << (*it)->get_atak() << endl;
+		out << "Defensa:" << (*it)->get_def() << endl;
+	}
+
+
+	return out;
+
 }
-
-void cDragones::imprimir()
-{
-	cout <<this-> to_string();
-}
-
