@@ -47,7 +47,6 @@ int main()
     cDragones* Nerdy = new cDragones("Nerdy", "inteligente", "mediano", "violeta", true, true);
 
     list<cDragones*> DragonesMigue;
-
     DragonesMigue.push_back(Panchito);
     DragonesMigue.push_back(Rayito);
 
@@ -55,6 +54,12 @@ int main()
     DragonesLoren.push_back(Nerdy);
     DragonesLoren.push_back(Cutie);
 
+    list<cDragones*>DragonesEliminados;
+    DragonesEliminados.push_back(Destructorcito);
+
+    list<cDragones*> DragonesSalvajes;
+    DragonesSalvajes.push_back(Fueguito);
+    DragonesSalvajes.push_back(Chispita);
     list<cDragones*> DragonesTotales;
     DragonesTotales.push_back(Panchito);
     DragonesTotales.push_back(Rayito);
@@ -63,6 +68,13 @@ int main()
     DragonesTotales.push_back(Chispita);
     DragonesTotales.push_back(Fueguito);
    
+
+    list<cDragones*> DragonesDomados;
+    DragonesDomados.push_back(Panchito);
+    DragonesDomados.push_back(Cutie);
+    DragonesDomados.push_back(Rayito);
+    DragonesDomados.push_back(Nerdy);
+
 
     cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
     cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
@@ -111,18 +123,11 @@ int main()
    Miguel->entrenar_dragon(Fueguito,forma1);
    Lorenzo->entrenar_dragon(Cutie, forma7);
 
-   list<cDragones*> salvajes;
-   list<cDragones*>muertitos;
-
    int resul= Fueguito->get_id();
 
-   cAldea Aldeita (DragonesTotales, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
+   cAldea* Aldeita = new cAldea(DragonesLoren, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
    
    cout<< Aldeita;
-
-  /* cout << Lorenzo;
-   cout << Martin;
-   cout << Chisp*/
 
    list<cVikingos*>::iterator it;
    for (it = VikingosAldea.begin(); it != VikingosAldea.end(); it++) {
