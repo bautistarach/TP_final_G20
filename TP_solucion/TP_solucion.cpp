@@ -60,6 +60,7 @@ int main()
     list<cDragones*> DragonesSalvajes;
     DragonesSalvajes.push_back(Fueguito);
     DragonesSalvajes.push_back(Chispita);
+
     list<cDragones*> DragonesTotales;
     DragonesTotales.push_back(Panchito);
     DragonesTotales.push_back(Rayito);
@@ -125,7 +126,7 @@ int main()
 
    int resul= Fueguito->get_id();
 
-   cAldea* Aldeita = new cAldea(DragonesLoren, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
+   cAldea Aldeita (DragonesTotales,DragonesEliminados,DragonesDomados,DragonesSalvajes,VikingosAldea,JinetesAldea);
    
    cout<< Aldeita;
 

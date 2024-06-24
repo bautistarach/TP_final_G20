@@ -2,10 +2,4 @@
 C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cAldea.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  Generando código...
-C:\Users\rachb\LaboTP\TP_solucion\cAldea.cpp(90): warning C4715: 'cAldea::asignar_jinete': no todas las rutas de acceso de control devuelven un valor
   TP_solucion.vcxproj -> C:\Users\rachb\LaboTP\TP_solucion\x64\Debug\TP_solucion.exe
