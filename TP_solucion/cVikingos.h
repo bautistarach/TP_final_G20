@@ -19,28 +19,32 @@ private:
 
 	unsigned int dragones_eliminados;
 	bool vivo;
-	//posicion_vik posicion;
 	int vida;
 	int ataque;
 	int defensa;
 
 public:
 	cVikingos(string nom, string ape, string apo, string fecha_nac, unsigned int dragones_elim, bool vivo_);
-	virtual ~cVikingos() = default;
+	virtual ~cVikingos() = default;//al ser clase abstracta el destructor es virtual 
+
 	bool dragones_terminados();
 	bool baja_confirmada(cDragones* dragon);
 	bool morir_batallando();
 	void atacar(cDragones* dragon);
-	void set_vida(int v);
-	int get_vida();
-	virtual void trabajar(cVikingos* v)=0;//clase abstracta
+
+	int get_vidav();
+	void set_vidav(int v);
+	
 	int get_nataque();
 	void set_nataque(int a);
+
 	int get_delim();
 	bool get_vivo();
 	int get_defensa();
 
-	friend ostream& operator<<(ostream& out, cVikingos& v)
+	virtual void trabajar(cVikingos* v) = 0;//clase abstracta
+
+	friend ostream& operator<<(ostream& out, cVikingos& v);
 };
 
 #endif

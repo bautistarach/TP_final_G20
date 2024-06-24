@@ -26,7 +26,6 @@ private:
 public:
 	cJinetes(string nom, string ape, string apo, string fecha_nac_, tipoResultado resul, tipoCaracteristicas carac, list<cDragones*> drag);
 	~cJinetes();
-	//int operator=(string aux);
 	void operator-(cDragones* dragoncito);
 	void operator+(cDragones* dragoncito);
 	bool domar_dragon(cDragones* dragon);

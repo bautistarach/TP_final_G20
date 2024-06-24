@@ -54,14 +54,14 @@ void cVikingos::atacar(cDragones* dragon)
 	
 }
 
-void cVikingos::set_vida(int v)
-{
-	this->vida = v;
-}
-
-int cVikingos::get_vida()
+int cVikingos::get_vidav()
 {
 	return this->vida;
+}
+
+void cVikingos::set_vidav(int v)
+{
+	this->vida = v;
 }
 
 int cVikingos::get_nataque()

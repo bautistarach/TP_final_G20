@@ -40,17 +40,15 @@ public:
 	
 	string get_nombre();
 	
-
 	static int cont_id;
 	int get_id();//Esta funcion no tiene setter ya que es un atributo static 
 	
 	int get_vida();
 	void set_vida(int vid);
+
 	string get_carac();
 	string get_color();
 	string get_tamanio();
-
-
 	
 	list <cFormaAtaque*> get_ataque();
 	void set_ataque(list <cFormaAtaque*> atak);
