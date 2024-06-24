@@ -36,6 +36,10 @@ public:
 	virtual void trabajar(cVikingos* v)=0;//clase abstracta
 	int get_nataque();
 	void set_nataque(int a);
+	int get_delim();
+	bool get_vivo();
+	int get_defensa();
+
 	friend ostream& operator<<(ostream& out, cVikingos& v)
 };
 

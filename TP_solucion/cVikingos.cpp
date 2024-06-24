@@ -74,6 +74,21 @@ void cVikingos::set_nataque(int a)
 	this->ataque = a;
 }
 
+int cVikingos::get_delim()
+{
+	return this->dragones_eliminados;
+}
+
+bool cVikingos::get_vivo()
+{
+	return this->vivo;
+}
+
+int cVikingos::get_defensa()
+{
+	return this->defensa;
+}
+
 
 ostream& operator<<(ostream& out, cVikingos& v)
 {

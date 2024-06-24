@@ -4,7 +4,7 @@ cJinetes::cJinetes(string nom, string ape, string apo, string fecha_nac_, tipoRe
 {
 	this->resultado = resul;
 	this->caracteristica = carac;
-	this->Dragon = drag;
+	
 }
 
 cJinetes::~cJinetes()
@@ -111,5 +111,22 @@ void cJinetes::entrenar_dragon(cDragones* dragon, cFormaAtaque*a)
 	return;
 }
 
+ostream& operator<<(ostream& out, cJinetes& j)
+{
+	out << "Nombre:" << j.get_nombre() << endl;
+	out << "Apellido:" << j.get_apellido() << endl;
+	out << "Apodo:" << j.get_apodo() << endl;
+	out << "Fecha de nacimiento:" << j.get_fecha_nac() << endl;
+	out << "Resultado exámen:" << j.resultado << endl;
+	out << "Caracteristica" << j.caracteristica << endl;
 
+	list<cDragones*>::iterator it;
 
+	for (it = j.Dragon.begin(); it != j.Dragon.end(); it++) {
+		out << "Nombre Dragon:" << (*it)->get_nombre() << endl;
+		out << "ID Dragon:" << (*it)->get_id() << endl;
+	}
+
+	return out;
+
+}

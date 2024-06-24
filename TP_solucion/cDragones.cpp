@@ -48,10 +48,7 @@ string cDragones::get_nombre()
 	return this->nombre;
 }
 
-void cDragones::set_nombre(string nomb)
-{
-	this->nombre = nomb;
-}
+
  
 int cDragones::get_id()
 {
@@ -66,6 +63,21 @@ int cDragones::get_vida()
 void cDragones::set_vida(int vid)
 {
 	this->vida = vid;
+}
+
+string cDragones::get_carac()
+{
+	return this->caracteristica;
+}
+
+string cDragones::get_color()
+{
+	return this->color;
+}
+
+string cDragones::get_tamanio()
+{
+	return this->tamanio;
 }
 
 void cDragones::set_ataque(list<cFormaAtaque*> atak)
