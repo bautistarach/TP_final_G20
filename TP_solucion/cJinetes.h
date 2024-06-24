@@ -35,7 +35,7 @@ public:
 	void set_resultado(tipoResultado NuevoEstado);
 	void entrenar_dragon(cDragones* dragon, cFormaAtaque* a);
 	list<cDragones*>get_dragones();
-	friend ostream& operator<<(ostream& out, cJinetes& j);
+	//friend ostream& operator<<(ostream& out, cJinetes& j);
 
 
 

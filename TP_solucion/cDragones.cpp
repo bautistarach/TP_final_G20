@@ -135,24 +135,24 @@ void cDragones::agregar_ataque(cFormaAtaque* at)
 }
 
 
-ostream& operator<<(ostream& out, cDragones& d)
-{
-	out << "Nombre:" << d.nombre << endl;
-	out << "Caracteristica:" << d.caracteristica << endl;
-	out << "Color:" << d.color << endl;
-	out << "Tamaño:" << d.tamanio << endl;
-	out << "Domado:" << d.estado << endl;
-	out << "Vivo:" << d.vivo << endl;
-	out << "ID:" << d.id_dragon << endl;
-
-	list<cFormaAtaque*>::iterator it;
-
-	for (it = d.ataq.begin(); it != d.ataq.end(); it++) {
-		out << "Ataque:" << (*it)->get_atak() << endl;
-		out << "Defensa:" << (*it)->get_def() << endl;
-	}
-
-
-	return out;
-
-}
+//ostream& operator<<(ostream& out, cDragones& d)
+//{
+//	out << "Nombre:" << d.nombre << endl;
+//	out << "Caracteristica:" << d.caracteristica << endl;
+//	out << "Color:" << d.color << endl;
+//	out << "Tamaño:" << d.tamanio << endl;
+//	out << "Domado:" << d.estado << endl;
+//	out << "Vivo:" << d.vivo << endl;
+//	out << "ID:" << d.id_dragon << endl;
+//
+//	list<cFormaAtaque*>::iterator it;
+//
+//	for (it = d.ataq.begin(); it != d.ataq.end(); it++) {
+//		out << "Ataque:" << (*it)->get_atak() << endl;
+//		out << "Defensa:" << (*it)->get_def() << endl;
+//	}
+//
+//
+//	return out;
+//
+//}

@@ -57,6 +57,6 @@ public:
 	int devolver_defensa(int x);
 	void agregar_ataque(cFormaAtaque* at);
 
-	friend ostream& operator<<(ostream& out, cDragones& d);
+	//friend ostream& operator<<(ostream& out, cDragones& d);
 };
 #endif

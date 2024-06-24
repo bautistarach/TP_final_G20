@@ -90,17 +90,17 @@ int cVikingos::get_defensa()
 }
 
 
-ostream& operator<<(ostream& out, cVikingos& v)
-{
-	out << "Nombre:" << v.get_nombre() << endl;
-	out << "Apellido:" << v.get_apellido() << endl;
-	out << "Apodo:" << v.get_apodo() << endl;
-	out << "Fecha de nacimiento: " << v.get_fecha_nac() << endl;
-	out << "Dragones eliminados:" << v.dragones_eliminados << endl;
-	out << "Vivo: " << v.vivo << endl;
-	out << "N° Vida:" << v.vida << endl;
-	out << "Daño de ataque:" << v.ataque << endl;
-	out << "Defensa:" << v.defensa << endl;
-
-	return out;
-}
+//ostream& operator<<(ostream& out, cVikingos& v)
+//{
+//	out << "Nombre:" << v.get_nombre() << endl;
+//	out << "Apellido:" << v.get_apellido() << endl;
+//	out << "Apodo:" << v.get_apodo() << endl;
+//	out << "Fecha de nacimiento: " << v.get_fecha_nac() << endl;
+//	out << "Dragones eliminados:" << v.dragones_eliminados << endl;
+//	out << "Vivo: " << v.vivo << endl;
+//	out << "N° Vida:" << v.vida << endl;
+//	out << "Daño de ataque:" << v.ataque << endl;
+//	out << "Defensa:" << v.defensa << endl;
+//
+//	return out;
+//}

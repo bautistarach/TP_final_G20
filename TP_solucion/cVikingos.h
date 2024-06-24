@@ -44,7 +44,7 @@ public:
 
 	virtual void trabajar(cVikingos* v) = 0;//clase abstracta
 
-	friend ostream& operator<<(ostream& out, cVikingos& v);
+	//friend ostream& operator<<(ostream& out, cVikingos& v);
 };
 
 #endif

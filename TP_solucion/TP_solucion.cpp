@@ -103,13 +103,18 @@ int main()
    Miguel->entrenar_dragon(Fueguito,forma1);
    Lorenzo->entrenar_dragon(Cutie, forma7);
 
+   list<cDragones*> salvajes;
+   list<cDragones*>muertitos;
 
    int resul= Fueguito->get_id();
 
+   cAldea* Aldeita = new cAldea(DragonesLoren, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
    
-   cout << Lorenzo;
+   cout << Aldeita;
+
+  /* cout << Lorenzo;
    cout << Martin;
-   cout << Chispita;
+   cout << Chisp*/
 
    list<cVikingos*>::iterator it;
    for (it = VikingosAldea.begin(); it != VikingosAldea.end(); it++) {

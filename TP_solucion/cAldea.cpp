@@ -1,7 +1,13 @@
 #include "cAldea.h"
 
-cAldea::cAldea()
+cAldea::cAldea(list<cDragones*>d, list<cDragones*>s, list<cDragones*>a, list<cDragones*>f, list <cVikingos*>v, list<cJinetes*>j)
 {
+	this->Dragones = d;
+	this->eliminados = s;
+	this->domados = a;
+	this->salvajes = f;
+	this->Vikingos = v;
+	this->Jinetes = j;
 }
 
 cAldea::~cAldea()

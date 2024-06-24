@@ -27,7 +27,7 @@ private:
 
 
 public:
-	cAldea();
+	cAldea(list<cDragones*>d, list<cDragones*>s, list<cDragones*>a, list<cDragones*>f, list <cVikingos*>v, list<cJinetes*>j);
 	~cAldea();
 	void revision_dragones(cDragones* dragoncito);//funcion para eliminar los dragones muertos de la lista de dragones
 	void dragones_muertos(cDragones* elim);
