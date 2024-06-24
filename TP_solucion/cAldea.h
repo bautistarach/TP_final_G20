@@ -33,7 +33,7 @@ public:
 	void dragones_muertos(cDragones* elim);
 	void clasificar_dragones();
 	cJinetes* asignar_jinete(cDragones* d);
-	friend ostream& operator<<(ostream& out, cAldea& a);
+	friend ostream& operator << (ostream& out, cAldea& a);
 
 
 };

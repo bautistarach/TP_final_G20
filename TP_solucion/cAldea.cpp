@@ -89,7 +89,7 @@ cJinetes* cAldea::asignar_jinete(cDragones* d)//nos devuelve que jinete esta asi
 	}
 }
 
-ostream& operator<<(ostream& out, cAldea& a)
+ostream& operator << (ostream& out, cAldea& a)
 {
 	list<cDragones*>::iterator it1;
 

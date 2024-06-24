@@ -55,6 +55,14 @@ int main()
     DragonesLoren.push_back(Nerdy);
     DragonesLoren.push_back(Cutie);
 
+    list<cDragones*> DragonesTotales;
+    DragonesTotales.push_back(Panchito);
+    DragonesTotales.push_back(Rayito);
+    DragonesTotales.push_back(Nerdy);
+    DragonesTotales.push_back(Cutie);
+    DragonesTotales.push_back(Chispita);
+    DragonesTotales.push_back(Fueguito);
+   
 
     cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
     cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
@@ -108,9 +116,9 @@ int main()
 
    int resul= Fueguito->get_id();
 
-   cAldea* Aldeita = new cAldea(DragonesLoren, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
+   cAldea Aldeita (DragonesTotales, DragonesMigue, salvajes, muertitos, VikingosAldea, JinetesAldea);
    
-   cout << Aldeita;
+   cout<< Aldeita;
 
   /* cout << Lorenzo;
    cout << Martin;

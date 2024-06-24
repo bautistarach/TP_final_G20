@@ -6,37 +6,6 @@ C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typed
 C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cDragones.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-  cFormaAtaque.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-  cGuerrero.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cHerrero.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cJinetes.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\cJinetes.cpp(44,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  cMedico.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cVikingos.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\cVikingos.cpp(42,41): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\rachb\LaboTP\TP_solucion\cVikingos.cpp(43,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   Generando código...
-C:\Users\rachb\LaboTP\TP_solucion\cJinetes.cpp(72): warning C4715: 'cJinetes::domar_dragon': no todas las rutas de acceso de control devuelven un valor
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(106): warning C4715: 'cDragones::devolver_ataque': no todas las rutas de acceso de control devuelven un valor
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(119): warning C4715: 'cDragones::devolver_defensa': no todas las rutas de acceso de control devuelven un valor
 C:\Users\rachb\LaboTP\TP_solucion\cAldea.cpp(90): warning C4715: 'cAldea::asignar_jinete': no todas las rutas de acceso de control devuelven un valor
   TP_solucion.vcxproj -> C:\Users\rachb\LaboTP\TP_solucion\x64\Debug\TP_solucion.exe
