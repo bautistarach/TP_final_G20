@@ -1,46 +1,5 @@
-﻿  cAldea.cpp
+﻿  TP_solucion.cpp
 C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
 C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cGuerrero.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cDragones.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(129,131): error C2660: 'cDragones::to_string': la función no acepta 1 argumentos
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(127,19): message : vea la declaración de 'cDragones::to_string'
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(129,157): error C2660: 'cDragones::to_string': la función no acepta 1 argumentos
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(127,19): message : vea la declaración de 'cDragones::to_string'
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(129,183): error C2660: 'cDragones::to_string': la función no acepta 1 argumentos
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(127,19): message : vea la declaración de 'cDragones::to_string'
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(129,208): error C2660: 'cDragones::to_string': la función no acepta 1 argumentos
-C:\Users\rachb\LaboTP\TP_solucion\cDragones.cpp(127,19): message : vea la declaración de 'cDragones::to_string'
-  cHerrero.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cJinetes.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\cJinetes.cpp(44,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  cMedico.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  cPersona.cpp
-  cVikingos.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\cVikingos.cpp(42,37): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\rachb\LaboTP\TP_solucion\cVikingos.cpp(43,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  TP_solucion.cpp
-C:\Users\rachb\LaboTP\TP_solucion\tipoAtaque.h(5,92): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoAtaque' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\tipoDefensa.h(5,133): warning C4091: 'typedef ': se ha omitido a la izquierda de 'tipoDefensa' cuando no hay ninguna variable declarada
-C:\Users\rachb\LaboTP\TP_solucion\posicionvikingo.h(5,69): warning C4091: 'typedef ': se ha omitido a la izquierda de 'posicion_vik' cuando no hay ninguna variable declarada
-  Generando código...
-C:\Users\rachb\LaboTP\TP_solucion\cJinetes.cpp(72): warning C4715: 'cJinetes::domar_dragon': no todas las rutas de acceso de control devuelven un valor
-C:\Users\rachb\LaboTP\TP_solucion\cAldea.cpp(89): error C4716: 'cAldea::to_string': debe devolver un valor
-C:\Users\rachb\LaboTP\TP_solucion\cAldea.cpp(84): warning C4715: 'cAldea::asignar_jinete': no todas las rutas de acceso de control devuelven un valor
+C:\Users\rachb\LaboTP\TP_solucion\TP_solucion.cpp(101,21): error C2440: '-': no se puede realizar la conversión de 'cDragones *' a 'cJinetes *'

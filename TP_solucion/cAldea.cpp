@@ -133,7 +133,7 @@ ostream& operator<<(ostream& out, cAldea& a)
 		out << "Fecha de nacimiento: " << (*it4)->get_fecha_nac() << endl;
 		out << "Dragones eliminados:" << (*it4)->get_delim() << endl;
 		out << "Vivo: " << (*it4)->get_vivo() << endl;
-		out << "N° Vida:" << (*it4)->get_vida() << endl;
+		out << "N° Vida:" << (*it4)->get_vidav() << endl;
 		out << "Daño de ataque:" << (*it4)->get_nataque() << endl;
 		out << "Defensa:" << (*it4)->get_defensa() << endl;
 

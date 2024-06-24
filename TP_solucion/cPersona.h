@@ -18,6 +18,7 @@ private:
 	
 public:
 	cPersona(string nom, string ape, string apo, string fecha_nac);
+	cPersona();
 	~cPersona();
 	string get_nombre();
 	void set_nombre(string NuevoEstado);

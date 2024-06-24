@@ -9,6 +9,15 @@ cPersona::cPersona(string nom, string ape, string apo, string fecha_nac)
 
 }
 
+cPersona::cPersona()
+{
+	this->nombre = "Julian";
+	this->apellido = "Martinez";
+	this->apodo = "El pichichi";
+	this->fecha_nac = "03/07/2000";
+
+}
+
 cPersona::~cPersona()
 {
 }

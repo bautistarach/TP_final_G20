@@ -26,7 +26,7 @@ int main()
     cVikingos* Bautista = new cMedico("Bautista", "Rach", "Toba", "20/07/2003", 7, false);
     cVikingos* Martina = new cHerrero("Martina", "Hansel", "Tula", "29/03/2003", 4, true);
     cVikingos* Julia = new cHerrero("Julia", "Gretel", "Juji", "25/12/1994", 11, false);
-    
+
 
     list <cVikingos*> VikingosAldea;
 
@@ -54,41 +54,101 @@ int main()
     list<cDragones*> DragonesLoren;
     DragonesLoren.push_back(Nerdy);
     DragonesLoren.push_back(Cutie);
+
+
+    cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
+    cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
+
+    list<cJinetes*> JinetesAldea;
+    JinetesAldea.push_back(Miguel);
+    JinetesAldea.push_back(Lorenzo);
+
+    cFormaAtaque* forma1 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::resistencia_intensa);
+    cFormaAtaque* forma2 = new cFormaAtaque(tipoAtaque::fuego, tipoDefensa::armadura_dragon);
+    cFormaAtaque* forma3 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
+    cFormaAtaque* forma4 = new cFormaAtaque(tipoAtaque::rayo, tipoDefensa::reflejos_rapidos);
+    cFormaAtaque* forma5 = new cFormaAtaque(tipoAtaque::garras, tipoDefensa::capa_invisibilidad);
+    cFormaAtaque* forma6 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::reflejos_rapidos);
+    cFormaAtaque* forma7 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
+
+
+    Miguel->domar_dragon(Fueguito);
+
+    try {
+        Lorenzo->operator+(Chispita);// no nos toma el +
+    }
+    catch (exception* e) {
+        cout << e->what() << endl;
+        delete e;
+    }
+
+    try {
+        Panchito->agregar_ataque(forma1);
+    }
+    catch (exception* e)
+    {
+        cout << e->what() << endl;
+        delete e;
+    }
+
+    Andres->atacar(Panchito);
+    Felipe->trabajar(Andres);//Cura a andres despues de la batalla
+
+    Julia->trabajar(Martin);//mejora el armamento de martin
+    Martin->atacar(Rayito);
+
+    Martin->atacar(Chispita);
+    Lorenzo-Chispita;
+
+   Miguel->entrenar_dragon(Fueguito,forma1);
+   Lorenzo->entrenar_dragon(Cutie, forma7);
+
+
+   int resul= Fueguito->get_id();
+
    
+   cout << Lorenzo;
+   cout << Martin;
+   cout << Chispita;
 
-   cJinetes* Miguel = new cJinetes("Miguel", "Sanchez", "Migue", "30/03/1992", aprobado, robusto, DragonesMigue);
-   cJinetes* Lorenzo = new cJinetes("Lorenzo", "Garcia", "Loren", "25/08/1995", primero, agil, DragonesLoren);
-
-   list<cJinetes*> JinetesAldea;
-   JinetesAldea.push_back(Miguel);
-   JinetesAldea.push_back(Lorenzo);
-
-   cFormaAtaque* forma1 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::resistencia_intensa);
-   cFormaAtaque* forma2= new cFormaAtaque(tipoAtaque::fuego, tipoDefensa::armadura_dragon);
-   cFormaAtaque* forma3 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
-   cFormaAtaque* forma4 = new cFormaAtaque(tipoAtaque::rayo, tipoDefensa::reflejos_rapidos);
-   cFormaAtaque* forma5 = new cFormaAtaque(tipoAtaque::garras, tipoDefensa::capa_invisibilidad);
-   cFormaAtaque* forma6 = new cFormaAtaque(tipoAtaque::acido, tipoDefensa::reflejos_rapidos);
-   cFormaAtaque* forma7 = new cFormaAtaque(tipoAtaque::viento, tipoDefensa::abrazo_de_oso);
-
-
-   Miguel->domar_dragon(Fueguito);
-   Lorenzo->domar_dragon(Chispita);
-
-   try {
-       Panchito->agregar_ataque(forma1);  
+   list<cVikingos*>::iterator it;
+   for (it = VikingosAldea.begin(); it != VikingosAldea.end(); it++) {
+       delete(*it);
    }
-   catch (exception* e)
-   {
-       cout << e->what() << endl;
-       delete e;
+   VikingosAldea.clear();
+  
+
+   list<cJinetes*>::iterator it1;
+   for (it1 = JinetesAldea.begin(); it1 != JinetesAldea.end(); it1++) {
+       delete(*it1);
    }
+   JinetesAldea.clear();
 
 
+    list<cDragones*>::iterator it2;
+    for (it2 = DragonesLoren.begin(); it2 != DragonesLoren.end(); it2++) {
+        delete(*it2);
+    }
+    DragonesLoren.clear();
+
+list<cDragones*>::iterator it3;
+   for (it3 = DragonesMigue.begin(); it3 != DragonesMigue.end(); it3++) {
+       delete(*it3);
+   }
+    DragonesMigue.clear();
+
+    delete forma1;
+    delete forma2;
+    delete forma3;
+    delete forma4;
+    delete forma5;
+    delete forma6;
+    delete forma7;
 
 
     return 0;
 }
+
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
 // Depurar programa: F5 o menú Depurar > Iniciar depuración

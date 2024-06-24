@@ -10,5 +10,5 @@ cMedico::~cMedico()
 
 void cMedico::trabajar(cVikingos* v)
 {
-	v->set_vida(v->get_vida() + 15);
+	v->set_vidav(v->get_vidav() + 15);
 }
