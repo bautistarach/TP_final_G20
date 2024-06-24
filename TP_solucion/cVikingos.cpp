@@ -39,7 +39,7 @@ bool cVikingos::morir_batallando()
 
 void cVikingos::atacar(cDragones* dragon)
 {
-	int i = dragon->get_ataque().size();
+	int i = dragon->get_ataque().max_size();
 	srand(time(NULL));
 	int resul = rand() % i;
 

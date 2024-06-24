@@ -98,7 +98,7 @@ int main()
     Martin->atacar(Rayito);
 
     Martin->atacar(Chispita);
-    Lorenzo-Chispita;
+    Lorenzo->operator-(Chispita);
 
    Miguel->entrenar_dragon(Fueguito,forma1);
    Lorenzo->entrenar_dragon(Cutie, forma7);
