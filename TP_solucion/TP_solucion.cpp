@@ -141,50 +141,56 @@ int main()
    for (it1 = JinetesAldea.begin(); it1 != JinetesAldea.end(); it1++) {
        delete(*it1);
    }
-   JinetesAldea.clear();
+    JinetesAldea.clear();
 
 
-    list<cDragones*>::iterator it2;
+    
+       
+
+     list<cDragones*>::iterator it4;
+       
+     for (it4 = DragonesTotales.begin(); it4 != DragonesTotales.end(); it4++) {
+            delete(*it4);
+        }
+        DragonesTotales.clear();
+
+ 
+
+   list<cDragones*>::iterator it6;
+
+   for (it6 = DragonesEliminados.begin(); it6 != DragonesEliminados.end(); it6++) {
+       delete(*it6);
+
+   }
+    DragonesEliminados.clear();
+    
+    /* list<cDragones*>::iterator it5;
+
+   for (it5 = DragonesDomados.begin(); it5 != DragonesDomados.end(); it5++) {
+      delete(*it5);
+   }
+   ;*/
+    /*list<cDragones*>::iterator it2;
     for (it2 = DragonesLoren.begin(); it2 != DragonesLoren.end(); it2++) {
         delete(*it2);
-    }
-    DragonesLoren.clear();
+    }*/
+    
 
-list<cDragones*>::iterator it3;
-   for (it3 = DragonesMigue.begin(); it3 != DragonesMigue.end(); it3++) {
-       delete(*it3);
-   }
-    DragonesMigue.clear();
-
-    list<cDragones*>::iterator it4;
-    for (it4 = DragonesTotales.begin(); it4 != DragonesTotales.end(); it4++) {
-        delete(*it4);
-    }
-    DragonesTotales.clear();
-
-    list<cDragones*>::iterator it5;
-
-    for (it5 = DragonesDomados.begin(); it5 != DragonesDomados.end(); it5++) {
-        delete(*it5);
-    }
-    DragonesDomados.clear();
-
-    list<cDragones*>::iterator it6;
-
-    for (it6 = DragonesEliminados.begin(); it6 != DragonesEliminados.end(); it6++) {
-        delete(*it6);
-
-    }
-    DragonesEliminados.clear();
-
-    list<cDragones*>::iterator it7;
-
-    for (it7 = DragonesSalvajes.begin(); it7 != DragonesSalvajes.end(); it7++) {
-        delete(*it7);
-
-    }
+    /*list<cDragones*>::iterator it3;
+      for (it3 = DragonesMigue.begin(); it3 != DragonesMigue.end(); it3++) {
+         delete(*it3);
+     }*/
+//
+//    list<cDragones*>::iterator it7;
+//
+//    for (it7 = DragonesSalvajes.begin(); it7 != DragonesSalvajes.end(); it7++) {
+//        delete(*it7);
+//
+ //   }
     DragonesSalvajes.clear();
-
+    DragonesLoren.clear();
+    DragonesDomados.clear();
+    DragonesMigue.clear();
 
     delete forma1;
     delete forma2;
